@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-c57v007$u05zx^srk*4=n36d^$cxsc#_lu6fg!86_cp*d)dqab
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['advisorbooking1.herokuapp.com']
+# ALLOWED_HOSTS = ['advisorbooking1.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,13 +126,13 @@ REST_FRAMEWORK = {
 }
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
+# PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
+# STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'static'),
+# )
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'User/media')
 MEDIA_URL = '/media/'
